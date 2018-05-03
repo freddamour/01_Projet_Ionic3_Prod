@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  bla bla.
+  <p>
+    lien vers site <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+  <p>interpolation de propriété {{1+1}}</p>
+  <p>{{titre}}+{{firsName}}</p>
+  <hr />
+
+<br>
+<input type="text" name="" id="" [(ngModel)]="newItem.reference">
+<input type="text" name="" id="" [(ngModel)]="newItem.name">
+<input type="text" name="" id="" [(ngModel)]="newItem.state">
+
+<!--   utile pour la maintenance -->
+<p> {{newItem |json}}</p>
+
+
+<!--   câblage de l'évenement sur une méthode du composant -->
+<button (click)="creationObjet()">Ajouter un objet</button>
+<!--   itération sur une collection -->
+  <div
+   *ngFor="let item of collection">
+  <p> Référense: {{item.reference}}</p>
+  <p> nom: {{item.name}}</p>
+  <p> state: {{item.state}}</p>
+
+  <!--   définition de l'objet $event -->
+  <a href="" id="{{item.reference}}" (click)="getDetails($event, 'test')">vers getDetails</a>
+
+  <!--   affichage conditionner -->
+  <p class="state-0" *ngIf="0==item.state">A faire </p>
+  <p class="state-1" *ngIf="1==item.state">En cours </p>
+  <p class="state-2"*ngIf="2==item.state">fait </p>
+  <hr />
+ </div>
+  
+
+  <!--   cible du binding -->
+dom: <input type="texte" [value]="name">
+attr:<input type="texte" value="{{name}}">
+<p [innerText]= "name"></p>
+<p>{{name}}</p>
+
+ <!--   cible vue vers model -->
+double binding <input type="text"[(ngModel)]=name>
+<button (click)="doClick()">appel méthode dans fichier .ts</button>
+<button ion-button id="btn" >click</button>
+</ion-content>

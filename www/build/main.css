@@ -25678,6 +25678,32 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+page-home .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-home .card-background-page .card-title {
+  position: absolute;
+  top: 36%;
+  font-size: 2.0em;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+
+page-home .card-background-page .card-subtitle {
+  font-size: 1.0em;
+  position: absolute;
+  top: 52%;
+  width: 100%;
+  color: #fff;
+}
+
 .state-0 {
   color: #5a01ff;
 }

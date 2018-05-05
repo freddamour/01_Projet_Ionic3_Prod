@@ -1,5 +1,38 @@
 page-home {
 
+
+    .card-background-page {
+
+        ion-card {
+          position: relative;
+          text-align: center;
+          display: flex;
+        }
+      
+        .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+        }
+      
+        .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: #fff;
+        }
+      
+      }
+
+
+
+
+
+
 }
 
 .state-0 {
@@ -12,3 +45,9 @@ page-home {
 .state-2 {
     color: rgb(7, 232, 248);
 }
+
+
+
+
+
+

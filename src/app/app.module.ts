@@ -21,7 +21,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    
   ],
   providers: [
     StatusBar,

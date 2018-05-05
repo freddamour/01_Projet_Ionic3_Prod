@@ -7,6 +7,21 @@
 </ion-header>
 
 <ion-content padding>
+
+    <div>
+        <label>PDF src</label>
+        <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">
+    </div>
+    <pdf-viewer [src]="pdfSrc" 
+                [render-text]="true"
+                style="display: block;"
+    ></pdf-viewer>
+
+
+
+
+
+
   bla bla.
   <a href="../../assets/Test.pdf">Notre grille tarifaire (PDF)</a>
   <iframe frameborder="0" width="90%" height="60%" src="../../assets/Test.pdf" scrolling="auto"></iframe>

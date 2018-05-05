@@ -17,7 +17,7 @@ export class HomePage {
   private collection: [any];
   public newItem:  {reference:string, name:string, state:number};
 
-
+  public pdfSrc: string = './assets/Test.pdf';
   constructor(public navCtrl: NavController) {
     this.titre ='app works';
     this.firsName ="robert";

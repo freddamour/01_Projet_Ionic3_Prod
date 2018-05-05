@@ -13,28 +13,27 @@
         <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">
     </div>
 
-    <ion-card>
-
-        <ion-card-header>
-          Card Header
-        </ion-card-header>
+    
+    
+    <div>
       
-        <ion-card-content>
+       
             <pdf-viewer [src]="pdfSrc" 
             [render-text]="true"
             [render-text]="true"
             [show-all]="true"
             [page]="1"
             [stick-to-page]="true"
+            [fit-to-page]="true"
             [autoresize]="true"
-            [original-size]="false"
+            [original-size]="true"
             [zoom]="1"
             style="display: block;"
 ></pdf-viewer>
           <!-- Add card content here! -->
-        </ion-card-content>
+       
       
-      </ion-card>
+      </div>
 
 
 

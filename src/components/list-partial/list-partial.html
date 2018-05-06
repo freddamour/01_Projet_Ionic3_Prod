@@ -1,6 +1,11 @@
-<div>
+  <ion-list >
 
-  <ion-list *ngFor="let item of list">
-    <ion-item *ngIf="item.status">{{item.name}} {{item.role}}</ion-item>
+    <div *ngFor="let item of list">
+
+      <button ion-item *ngIf="item.status">
+        {{item.name}} {{item.role}}
+      </button>
+
+    </div>
+
   </ion-list>  
-</div>

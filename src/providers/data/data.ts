@@ -23,6 +23,18 @@ export class DataProvider {
       {name: 'toto', role: 'lead-dev', status: 1},
       {name: 'titi', role: 'lead-titi', status: 0},
       {name: 'tata', role: 'lead-tata', status: 1},
+      {name: 'toto', role: 'lead-dev', status: 1},
+      {name: 'titi', role: 'lead-titi', status: 0},
+      {name: 'tata', role: 'lead-tata', status: 1},
+      {name: 'toto', role: 'lead-dev', status: 1},
+      {name: 'titi', role: 'lead-titi', status: 0},
+      {name: 'tata', role: 'lead-tata', status: 1},
+      {name: 'toto', role: 'lead-dev', status: 1},
+      {name: 'titi', role: 'lead-titi', status: 0},
+      {name: 'tata', role: 'lead-tata', status: 1},
+      {name: 'toto', role: 'lead-dev', status: 1},
+      {name: 'titi', role: 'lead-titi', status: 0},
+      {name: 'tata', role: 'lead-tata', status: 1},
     ];
   }
 

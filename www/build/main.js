@@ -41,7 +41,7 @@ webpackEmptyAsyncContext.id = 214;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(412);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -111,7 +111,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Ionic Blank\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <div>\n\n    <label>PDF src</label>\n\n    <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">\n\n  </div>\n\n\n\n\n\n<!-- mon PDF-------------------------------------------------------------------------------->\n\n<ion-card>\n\n    <div>pdf\n\n      <pdf-viewer [src]="pdfSrc" \n\n        [render-text]="true"\n\n        [render-text]="true"\n\n        [show-all]="true" \n\n        [page]="1"\n\n        [stick-to-page]="true"\n\n        [fit-to-page]="true" \n\n        [autoresize]="true"\n\n        [original-size]="true"\n\n        [zoom]="0.5" \n\n        style="display: block;">\n\n      </pdf-viewer>\n\n  </div>\n\n</ion-card>\n\n\n\n  <!-- fin mon PDF-------------------------------------------------------------------------------->\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  bla bla.\n\n  <a href="../../assets/Test.pdf">Notre grille tarifaire (PDF)</a>\n\n  <iframe frameborder="0" width="90%" height="60%" src="../../assets/Test.pdf" scrolling="auto"></iframe>\n\n  <p>\n\n    lien vers site\n\n    <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n\n  </p>\n\n  <p>interpolation de propriété {{1+1}}</p>\n\n  <p>{{titre}}+{{firsName}}</p>\n\n  <hr />\n\n\n\n  <br>\n\n  <input type="text" name="" id="" [(ngModel)]="newItem.reference">\n\n  <input type="text" name="" id="" [(ngModel)]="newItem.name">\n\n  <input type="text" name="" id="" [(ngModel)]="newItem.state">\n\n\n\n  <!--   utile pour la maintenance -->\n\n  <p> {{newItem |json}}</p>\n\n\n\n\n\n  <!--   câblage de l\'évenement sur une méthode du composant -->\n\n  <button (click)="creationObjet()">Ajouter un objet</button>\n\n  <!--   itération sur une collection -->\n\n  <div *ngFor="let item of collection">\n\n    <p> Référense: {{item.reference}}</p>\n\n    <p> nom: {{item.name}}</p>\n\n    <p> state: {{item.state}}</p>\n\n\n\n    <!--   définition de l\'objet $event -->\n\n    <a href="" id="{{item.reference}}" (click)="getDetails($event, \'test\')">vers getDetails</a>\n\n\n\n    <!--   affichage conditionner -->\n\n    <p class="state-0" *ngIf="0==item.state">A faire </p>\n\n    <p class="state-1" *ngIf="1==item.state">En cours </p>\n\n    <p class="state-2" *ngIf="2==item.state">fait </p>\n\n    <hr />\n\n  </div>\n\n\n\n\n\n  <!--   cible du binding -->\n\n  dom:\n\n  <input type="texte" [value]="name"> attr:\n\n  <input type="texte" value="{{name}}">\n\n  <p [innerText]="name"></p>\n\n  <p>{{name}}</p>\n\n\n\n  <!--   cible vue vers model -->\n\n  double binding\n\n  <input type="text" [(ngModel)]=name>\n\n  <button (click)="doClick()">appel méthode dans fichier .ts</button>\n\n  <button ion-button id="btn">click</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Ionic Blank\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <title-partial></title-partial>\n\n  <div>\n\n    <label>PDF src</label>\n\n    <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">\n\n  </div>\n\n\n\n\n\n<!-- mon PDF-------------------------------------------------------------------------------->\n\n<ion-card>\n\n    <div>pdf\n\n      <pdf-viewer [src]="pdfSrc" \n\n        [render-text]="true"\n\n        [render-text]="true"\n\n        [show-all]="true" \n\n        [page]="1"\n\n        [stick-to-page]="true"\n\n        [fit-to-page]="true" \n\n        [autoresize]="true"\n\n        [original-size]="true"\n\n        [zoom]="0.5" \n\n        style="display: block;">\n\n      </pdf-viewer>\n\n  </div>\n\n</ion-card>\n\n\n\n  <!-- fin mon PDF-------------------------------------------------------------------------------->\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  bla bla.\n\n  <a href="../../assets/Test.pdf">Notre grille tarifaire (PDF)</a>\n\n  <iframe frameborder="0" width="90%" height="60%" src="../../assets/Test.pdf" scrolling="auto"></iframe>\n\n  <p>\n\n    lien vers site\n\n    <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n\n  </p>\n\n  <p>interpolation de propriété {{1+1}}</p>\n\n  <p>{{titre}}+{{firsName}}</p>\n\n  <hr />\n\n\n\n  <br>\n\n  <input type="text" name="" id="" [(ngModel)]="newItem.reference">\n\n  <input type="text" name="" id="" [(ngModel)]="newItem.name">\n\n  <input type="text" name="" id="" [(ngModel)]="newItem.state">\n\n\n\n  <!--   utile pour la maintenance -->\n\n  <p> {{newItem |json}}</p>\n\n\n\n\n\n  <!--   câblage de l\'évenement sur une méthode du composant -->\n\n  <button (click)="creationObjet()">Ajouter un objet</button>\n\n  <!--   itération sur une collection -->\n\n  <div *ngFor="let item of collection">\n\n    <p> Référense: {{item.reference}}</p>\n\n    <p> nom: {{item.name}}</p>\n\n    <p> state: {{item.state}}</p>\n\n\n\n    <!--   définition de l\'objet $event -->\n\n    <a href="" id="{{item.reference}}" (click)="getDetails($event, \'test\')">vers getDetails</a>\n\n\n\n    <!--   affichage conditionner -->\n\n    <p class="state-0" *ngIf="0==item.state">A faire </p>\n\n    <p class="state-1" *ngIf="1==item.state">En cours </p>\n\n    <p class="state-2" *ngIf="2==item.state">fait </p>\n\n    <hr />\n\n  </div>\n\n\n\n\n\n  <!--   cible du binding -->\n\n  dom:\n\n  <input type="texte" [value]="name"> attr:\n\n  <input type="texte" value="{{name}}">\n\n  <p [innerText]="name"></p>\n\n  <p>{{name}}</p>\n\n\n\n  <!--   cible vue vers model -->\n\n  double binding\n\n  <input type="text" [(ngModel)]=name>\n\n  <button (click)="doClick()">appel méthode dans fichier .ts</button>\n\n  <button ion-button id="btn">click</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], HomePage);
@@ -141,14 +141,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(254);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(259);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(410);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(260);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_pdf_viewer__ = __webpack_require__(692);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_title_partial_title_partial__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_pdf_viewer__ = __webpack_require__(693);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -163,31 +164,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */]
+                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_0__components_title_partial_title_partial__["a" /* TitlePartialComponent */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_7_ng2_pdf_viewer__["a" /* PdfViewerModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_8_ng2_pdf_viewer__["a" /* PdfViewerModule */],
+                __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
                     links: []
                 })
             ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */],
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
+                __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */],
+                { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["b" /* IonicErrorHandler */] }
             ]
         })
     ], AppModule);
@@ -198,7 +201,41 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 410:
+/***/ 368:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TitlePartialComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TitlePartialComponent = /** @class */ (function () {
+    function TitlePartialComponent() {
+        console.log('Hello TitlePartialComponent Component');
+        this.text = 'Coucou depuis un sous composant';
+    }
+    TitlePartialComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'title-partial',template:/*ion-inline-start:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\title-partial\title-partial.html"*/'<!-- Generated template for the TitlePartialComponent component -->\n<div>\n <H1>{{text}}</H1> \n</div>\n'/*ion-inline-end:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\title-partial\title-partial.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], TitlePartialComponent);
+    return TitlePartialComponent;
+}());
+
+//# sourceMappingURL=title-partial.js.map
+
+/***/ }),
+
+/***/ 411:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -244,21 +281,14 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 697:
+/***/ 698:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 699:
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 716:
+/***/ 700:
 /***/ (function(module, exports) {
 
 /* (ignored) */
@@ -273,6 +303,13 @@ var MyApp = /** @class */ (function () {
 /***/ }),
 
 /***/ 718:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 719:
 /***/ (function(module, exports) {
 
 /* (ignored) */

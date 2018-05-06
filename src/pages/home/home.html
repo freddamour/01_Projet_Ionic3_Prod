@@ -6,8 +6,8 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <button (click)="navigateToList()">Navigation vers ListPage</button>
+<ion-content >
+  <button ion-button (click)="navigateToList()">Navigation vers ListPage</button>
   <title-partial></title-partial>
   <div>
     <label>PDF src</label>
@@ -27,7 +27,7 @@
         [fit-to-page]="true" 
         [autoresize]="true"
         [original-size]="true"
-        [zoom]="0.5" 
+        [zoom]="1" 
         style="display: block;">
       </pdf-viewer>
   </div>

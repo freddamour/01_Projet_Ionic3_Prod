@@ -16,6 +16,10 @@ import { ListPage } from './../pages/list/list'; // V2B: créer une appl ionic2-
 //Composants
 import { TitlePartialComponent } from './../components/title-partial/title-partial';
 
+//Providers (services)
+import { DataProvider } from '../providers/data/data';
+
+
 @NgModule({
   // entré ici le nouveau composant créer ( mode manuel)
   declarations: [
@@ -41,7 +45,8 @@ import { TitlePartialComponent } from './../components/title-partial/title-parti
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DataProvider,
   ]
 })
 export class AppModule {}

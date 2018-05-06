@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+//import de service manuellement
+import { DataProvider } from './../../providers/data/data';
+
+
 /**
  * Generated class for the ListPage page.
  *
@@ -15,7 +19,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ListPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public list: [any];
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public data: DataProvider) {
+         
+    this.list = data.getData();
+    console.log(data.getData());
   }
 
 

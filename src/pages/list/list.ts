@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-//import de service manuellement
-import { DataProvider } from './../../providers/data/data';
+
 
 
 /**
@@ -19,12 +18,11 @@ import { DataProvider } from './../../providers/data/data';
 })
 export class ListPage {
 
-  public list: [any];
+  
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public data: DataProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
          
-    this.list = data.getData();
-    console.log(data.getData());
+    
   }
 
 

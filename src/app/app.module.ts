@@ -15,6 +15,7 @@ import { ListPage } from './../pages/list/list'; // V2B: créer une appl ionic2-
 
 //Composants
 import { TitlePartialComponent } from './../components/title-partial/title-partial';
+import { ListPartialComponent } from './../components/list-partial/list-partial';
 
 //Providers (services)
 import { DataProvider } from '../providers/data/data';
@@ -26,6 +27,7 @@ import { DataProvider } from '../providers/data/data';
     MyApp,
     HomePage,
     TitlePartialComponent,
+    ListPartialComponent,
     ListPage
   ],
   imports: [

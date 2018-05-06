@@ -7,7 +7,6 @@ webpackJsonp([2],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_data_data__ = __webpack_require__(216);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,8 +18,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-//import de service manuellement
-
 /**
  * Generated class for the ListPage page.
  *
@@ -28,12 +25,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ListPage = /** @class */ (function () {
-    function ListPage(navCtrl, navParams, data) {
+    function ListPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.data = data;
-        this.list = data.getData();
-        console.log(data.getData());
     }
     //un évenemnet
     ListPage.prototype.ionViewDidLoad = function () {
@@ -41,9 +35,9 @@ var ListPage = /** @class */ (function () {
     };
     ListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\pages\list\list.html"*/'<!--\n\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <title-partial></title-partial>\n    <ul>\n      <li>Item #1</li>\n    </ul>\n\n    {{list}}\n\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\pages\list\list.html"*/,
+            selector: 'page-list',template:/*ion-inline-start:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\pages\list\list.html"*/'<!--\n\n\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>List</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <title-partial></title-partial>\n\n  <list-partial></list-partial>\n\n  \n\n\n\n    \n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\pages\list\list.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_data_data__["a" /* DataProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], ListPage);
     return ListPage;
 }());
@@ -74,7 +68,7 @@ webpackEmptyAsyncContext.id = 170;
 
 var map = {
 	"../pages/list/list.module": [
-		730,
+		731,
 		1
 	]
 };
@@ -94,53 +88,7 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 216:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-//import { HttpClient } from '@angular/common/http';
-
-/*
-  Generated class for the DataProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var DataProvider = /** @class */ (function () {
-    function DataProvider() {
-        console.log('Hello DataProvider Provider');
-    }
-    DataProvider.prototype.getData = function () {
-        // retourne un objet pur
-        return [
-            { name: 'toto', roles: 'lead-dev' },
-            { name: 'titi', roles: 'lead-titi' },
-            { name: 'tata', roles: 'lead-tata' }
-        ];
-    };
-    DataProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [])
-    ], DataProvider);
-    return DataProvider;
-}()); // fin de la classe
-
-//# sourceMappingURL=data.js.map
-
-/***/ }),
-
-/***/ 262:
+/***/ 261:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -233,6 +181,52 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 363:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+//import { HttpClient } from '@angular/common/http';
+
+/*
+  Generated class for the DataProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var DataProvider = /** @class */ (function () {
+    function DataProvider() {
+        console.log('Hello DataProvider Provider');
+    }
+    DataProvider.prototype.getData = function () {
+        // retourne un objet pur
+        return [
+            { name: 'toto', role: 'lead-dev', status: 1 },
+            { name: 'titi', role: 'lead-titi', status: 0 },
+            { name: 'tata', role: 'lead-tata', status: 1 },
+        ];
+    };
+    DataProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [])
+    ], DataProvider);
+    return DataProvider;
+}()); // fin de la classe
+
+//# sourceMappingURL=data.js.map
+
+/***/ }),
+
 /***/ 364:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -255,14 +249,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(260);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(412);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(261);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_pdf_viewer__ = __webpack_require__(694);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_list_list__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_title_partial_title_partial__ = __webpack_require__(729);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_data_data__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_list_partial_list_partial__ = __webpack_require__(730);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_data_data__ = __webpack_require__(363);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -283,6 +278,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
  // V2B: créer une appl ionic2-3 :Créer une page
 //Composants
 
+
 //Providers (services)
 
 var AppModule = /** @class */ (function () {
@@ -295,6 +291,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_9__components_title_partial_title_partial__["a" /* TitlePartialComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__components_list_partial_list_partial__["a" /* ListPartialComponent */],
                 __WEBPACK_IMPORTED_MODULE_8__pages_list_list__["a" /* ListPage */]
             ],
             imports: [
@@ -317,7 +314,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_10__providers_data_data__["a" /* DataProvider */],
+                __WEBPACK_IMPORTED_MODULE_11__providers_data_data__["a" /* DataProvider */],
             ]
         })
     ], AppModule);
@@ -335,9 +332,9 @@ var AppModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(261);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(261);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -435,7 +432,7 @@ var TitlePartialComponent = /** @class */ (function () {
     }
     TitlePartialComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'title-partial',template:/*ion-inline-start:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\title-partial\title-partial.html"*/'<!-- Generated template for the TitlePartialComponent component -->\n<div>\n <H1>{{text}}</H1> \n</div>\n'/*ion-inline-end:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\title-partial\title-partial.html"*/
+            selector: 'title-partial',template:/*ion-inline-start:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\title-partial\title-partial.html"*/'<!-- Generated template for the TitlePartialComponent component -->\n\n<div>\n\n <H1>{{text}}</H1> \n\n</div>\n\n'/*ion-inline-end:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\title-partial\title-partial.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TitlePartialComponent);
@@ -443,6 +440,50 @@ var TitlePartialComponent = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=title-partial.js.map
+
+/***/ }),
+
+/***/ 730:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPartialComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_data_data__ = __webpack_require__(363);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+//import de service manuellement
+
+/**
+ * Generated class for the ListPartialComponent component.
+ *
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
+ */
+var ListPartialComponent = /** @class */ (function () {
+    function ListPartialComponent(data) {
+        this.data = data;
+        this.list = data.getData();
+        console.log(data.getData());
+    }
+    ListPartialComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'list-partial',template:/*ion-inline-start:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\list-partial\list-partial.html"*/'<div>\n\n  <ion-list *ngFor="let item of list">\n    <ion-item *ngIf="item.status">{{item.name}} {{item.role}}</ion-item>\n  </ion-list>  \n</div>'/*ion-inline-end:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\list-partial\list-partial.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_data_data__["a" /* DataProvider */]])
+    ], ListPartialComponent);
+    return ListPartialComponent;
+}());
+
+//# sourceMappingURL=list-partial.js.map
 
 /***/ })
 

@@ -1,6 +1,10 @@
+import { ListPage } from './../list/list';
+
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Observable } from 'rxjs';
+
+
 
 @Component({
   selector: 'page-home',
@@ -18,6 +22,8 @@ export class HomePage {
   public newItem:  {reference:string, name:string, state:number};
 
   public pdfSrc: string = './assets/Test.pdf';
+
+
   constructor(public navCtrl: NavController) {
     this.titre ='app works';
     this.firsName ="robert";
@@ -31,6 +37,14 @@ export class HomePage {
     this.testObservable();
     this.resetNewItem();
   }// fin constructeur
+
+
+  navigateToList(){
+    this.navCtrl.push(ListPage);
+  }
+
+
+
   resetNewItem(){
 
     this.newItem={reference:'',name:'',state:0};

@@ -20,9 +20,9 @@ export class DataProvider {
     // retourne un objet pur
     
     return [
-      {name: 'toto', roles: 'lead-dev'},
-      {name: 'titi', roles: 'lead-titi'},
-      {name: 'tata', roles: 'lead-tata'}
+      {name: 'toto', role: 'lead-dev', status: 1},
+      {name: 'titi', role: 'lead-titi', status: 0},
+      {name: 'tata', role: 'lead-tata', status: 1},
     ];
   }
 

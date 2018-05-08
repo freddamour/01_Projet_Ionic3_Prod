@@ -1,7 +1,10 @@
 <ion-header>
   <ion-navbar>
+   <button ion-button menuToggle >
+     <ion-icon name="menu"></ion-icon>
+   </button>
     <ion-title>
-      Ionic Blank
+      Home
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -15,22 +18,80 @@
   </div>
 
 
+  <ion-slides autoplay="2000" pager>
+      <ion-slide >
+          <div >
+                <pdf-viewer [src]="pdfSrc" 
+                  [render-text]="false"
+                  [show-all]="false" 
+                  [page]="1"
+                  [stick-to-page]="true"
+                  [fit-to-page]="true" 
+                  [autoresize]="true"
+                  [original-size]="true"
+                  [zoom]="1" 
+                  style="display: block;">
+                </pdf-viewer>
+          </div>
+          
+          
+      </ion-slide>
+
+      <ion-slide >
+          <h2>Slide 2</h2>
+          <div>
+              <pdf-viewer [src]="pdfSrc" 
+              [render-text]="false"
+              [show-all]="false" 
+              [page]="2"
+              [stick-to-page]="true"
+              [fit-to-page]="true" 
+              [autoresize]="true"
+              [original-size]="true"
+              [zoom]="1" 
+              style="display: block;">
+              </pdf-viewer>
+        </div>
+
+
+      </ion-slide>
+
+      <ion-slide >
+          <h2>Slide 3</h2>
+          <div>
+              <pdf-viewer [src]="pdfSrc" 
+              [render-text]="false"
+              [show-all]="false" 
+              [page]="1"
+              [stick-to-page]="true"
+              [fit-to-page]="true" 
+              [autoresize]="true"
+              [original-size]="true"
+              [zoom]="1" 
+              style="display: block;">
+              </pdf-viewer>
+        </div>
+
+
+      </ion-slide>
+  </ion-slides>
+
 <!-- mon PDF-------------------------------------------------------------------------------->
 <ion-card>
-    <div>pdf
+    <ion-row>  pdf
       <pdf-viewer [src]="pdfSrc" 
-        [render-text]="true"
-        [render-text]="true"
+        [render-text]="false"
+        
         [show-all]="true" 
         [page]="1"
-        [stick-to-page]="true"
-        [fit-to-page]="true" 
+        [stick-to-page]="false"
+        [fit-to-page]="false" 
         [autoresize]="true"
-        [original-size]="true"
-        [zoom]="1" 
+        [original-size]="fales"
+        [zoom]="0.5" 
         style="display: block;">
       </pdf-viewer>
-  </div>
+    </ion-row>
 </ion-card>
 
   <!-- fin mon PDF-------------------------------------------------------------------------------->

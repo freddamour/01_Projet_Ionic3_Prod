@@ -1,0 +1,75 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Slide</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-slides autoplay="2000" pager>
+        <ion-slide >
+            <div >
+                  <h2>Slide 1e</h2>
+                  <pdf-viewer [src]="pdfSrc" 
+                    [render-text]="false"
+                    [show-all]="false" 
+                    [page]="1"
+                    [stick-to-page]="true"
+                    [fit-to-page]="true" 
+                    [autoresize]="true"
+                    [original-size]="true"
+                    [zoom]="1" 
+                    style="display: block;">
+                  </pdf-viewer>
+            </div>
+            
+            
+        </ion-slide>
+  
+        <ion-slide >
+            <h2>Slide 2</h2>
+            <div>
+                <pdf-viewer [src]="pdfSrc" 
+                [render-text]="false"
+                [show-all]="false" 
+                [page]="2"
+                [stick-to-page]="true"
+                [fit-to-page]="true" 
+                [autoresize]="true"
+                [original-size]="true"
+                [zoom]="1" 
+                style="display: block;">
+                </pdf-viewer>
+          </div>
+  
+  
+        </ion-slide>
+  
+        <ion-slide >
+            <h2>Slide 3</h2>
+            <div>
+                <pdf-viewer [src]="pdfSrc" 
+                [render-text]="false"
+                [show-all]="false" 
+                [page]="1"
+                [stick-to-page]="true"
+                [fit-to-page]="true" 
+                [autoresize]="true"
+                [original-size]="true"
+                [zoom]="1" 
+                style="display: block;">
+                </pdf-viewer>
+          </div>
+  
+  
+        </ion-slide>
+    </ion-slides>
+
+
+
+
+</ion-content>

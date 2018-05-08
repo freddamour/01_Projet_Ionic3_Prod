@@ -19,6 +19,7 @@ import { ListPartialComponent } from './../components/list-partial/list-partial'
 
 //Providers (services)
 import { DataProvider } from '../providers/data/data';
+import { SlidePage } from '../pages/slide/slide';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DataProvider } from '../providers/data/data';
     HomePage,
     TitlePartialComponent,
     ListPartialComponent,
-    ListPage
+    ListPage,
+    SlidePage
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,7 @@ import { DataProvider } from '../providers/data/data';
     MyApp,
     HomePage,
     ListPage,
+    SlidePage,
     
   ],
   providers: [

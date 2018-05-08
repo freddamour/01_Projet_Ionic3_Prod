@@ -1,3 +1,4 @@
+import { SlidePage } from './../slide/slide';
 import { ListPage } from './../list/list';
 
 import { Component } from '@angular/core';
@@ -98,7 +99,10 @@ export class HomePage {
       
   }
 
-  
+  navigerVersSliderPage(){
+    this.navCtrl.push(SlidePage);
+   
+  }
 
 
 }//fin constructeur

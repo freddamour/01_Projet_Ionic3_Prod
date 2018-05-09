@@ -25678,6 +25678,15 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+page-home button {
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#420101));
+  background: linear-gradient(to bottom, #000000, #420101);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 page-home ion-slides {
   position: relative;
   color: #941d1d;
@@ -25720,4 +25729,13 @@ page-home .card-background-page .card-subtitle {
 
 .state-2 {
   color: #07e8f8;
+}
+
+page-slide ion-content {
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#420101));
+  background: linear-gradient(to bottom, #000000, #420101);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

@@ -24,8 +24,15 @@ public dossiers: Array<Data>;
     new Data({name: 'Activitées', sousDossier: {'name':'Séquences','titre':"1",'icon':"build"}, status: 1}),
     new Data({name: 'Activitées', sousDossier: {'name':'Séances','titre':"1",'icon':"build"}, status: 1}),
     new Data({name: 'Activitées', sousDossier: {'name':'Cours','titre':"1",'icon':"build"}, status: 1}),
-    new Data({name: 'Savoirs', sousDossier:{'name': 'Phase0/Phase1/Phase2/Phase3/Phase4','titre':"1",'icon':"build"}, status: 1}),
-    new Data({name: 'Equipements', sousDossier:{'name': 'Produits','titre':"1",'icon':"build"}, status: 1})
+    new Data({name: 'Savoirs', sousDossier:{'name': 'Phase0','titre':"1",'icon':"build"}, status: 1}),
+    new Data({name: 'Savoirs', sousDossier:{'name': 'Phase1','titre':"1",'icon':"build"}, status: 1}),
+    new Data({name: 'Savoirs', sousDossier:{'name': 'Phase2','titre':"1",'icon':"build"}, status: 1}),
+    new Data({name: 'Savoirs', sousDossier:{'name': 'Phase3','titre':"1",'icon':"build"}, status: 1}),
+    new Data({name: 'Savoirs', sousDossier:{'name': 'Phase4','titre':"1",'icon':"build"}, status: 1}),
+    new Data({name: 'Equipements', sousDossier:{'name': '2nd','titre':"1",'icon':"build"}, status: 1}),
+    new Data({name: 'Equipements', sousDossier:{'name': '1er','titre':"1",'icon':"build"}, status: 1}),
+    new Data({name: 'Equipements', sousDossier:{'name': 'Ter','titre':"1",'icon':"build"}, status: 1}),
+    new Data({name: 'Equipements', sousDossier:{'name': 'Autres','titre':"1",'icon':"build"}, status: 1})
   ];}
 
   getData(): Array<Data>{

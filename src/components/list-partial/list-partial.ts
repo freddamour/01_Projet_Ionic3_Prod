@@ -20,6 +20,8 @@ export class ListPartialComponent {
   public dossierIDE: Array<Data>;
   public dossierGestions: Array<Data>;
   public dossierActivitees: Array<Data>;
+  public dossierSavoirs: Array<Data>;
+  public dossierEquipements: Array<Data>;
   
 
   constructor(public data: DataProvider) {
@@ -27,6 +29,8 @@ export class ListPartialComponent {
     this.dossierIDE = this.dossiers.filter(i=>(i.name=="IDE Logiciel"));
     this.dossierGestions = this.dossiers.filter(i=>(i.name=="Gestions"));
     this.dossierActivitees = this.dossiers.filter(i=>(i.name=="Activitées"));
+    this.dossierSavoirs = this.dossiers.filter(i=>(i.name=="Savoirs"));
+    this.dossierEquipements = this.dossiers.filter(i=>(i.name=="Equipements"));
     console.log(this.dossierIDE)
    // console.log(data.getData());
 

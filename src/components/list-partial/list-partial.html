@@ -26,3 +26,17 @@
         <ion-item *ngFor="let i of dossierActivitees">{{i.sousDossier.name}}</ion-item>
         
     </ion-list> 
+
+    <ion-list >
+        <ion-list-header>
+            <h1>Savoirs</h1>
+        </ion-list-header>
+        <ion-item *ngFor="let i of dossierSavoirs">{{i.sousDossier.name}}</ion-item>
+    </ion-list> 
+
+    <ion-list >
+        <ion-list-header>
+            <h1>Equipements</h1>
+        </ion-list-header>
+        <ion-item *ngFor="let i of dossierEquipements">{{i.sousDossier.name}}</ion-item>
+    </ion-list> 

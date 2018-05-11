@@ -269,8 +269,15 @@ var DataProvider = /** @class */ (function () {
             new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Activitées', sousDossier: { 'name': 'Séquences', 'titre': "1", 'icon': "build" }, status: 1 }),
             new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Activitées', sousDossier: { 'name': 'Séances', 'titre': "1", 'icon': "build" }, status: 1 }),
             new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Activitées', sousDossier: { 'name': 'Cours', 'titre': "1", 'icon': "build" }, status: 1 }),
-            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Savoirs', sousDossier: { 'name': 'Phase0/Phase1/Phase2/Phase3/Phase4', 'titre': "1", 'icon': "build" }, status: 1 }),
-            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Equipements', sousDossier: { 'name': 'Produits', 'titre': "1", 'icon': "build" }, status: 1 })
+            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Savoirs', sousDossier: { 'name': 'Phase0', 'titre': "1", 'icon': "build" }, status: 1 }),
+            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Savoirs', sousDossier: { 'name': 'Phase1', 'titre': "1", 'icon': "build" }, status: 1 }),
+            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Savoirs', sousDossier: { 'name': 'Phase2', 'titre': "1", 'icon': "build" }, status: 1 }),
+            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Savoirs', sousDossier: { 'name': 'Phase3', 'titre': "1", 'icon': "build" }, status: 1 }),
+            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Savoirs', sousDossier: { 'name': 'Phase4', 'titre': "1", 'icon': "build" }, status: 1 }),
+            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Equipements', sousDossier: { 'name': '2nd', 'titre': "1", 'icon': "build" }, status: 1 }),
+            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Equipements', sousDossier: { 'name': '1er', 'titre': "1", 'icon': "build" }, status: 1 }),
+            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Equipements', sousDossier: { 'name': 'Ter', 'titre': "1", 'icon': "build" }, status: 1 }),
+            new __WEBPACK_IMPORTED_MODULE_0__Models_Data__["a" /* Data */]({ name: 'Equipements', sousDossier: { 'name': 'Autres', 'titre': "1", 'icon': "build" }, status: 1 })
         ];
     }
     DataProvider.prototype.getData = function () {
@@ -559,12 +566,14 @@ var ListPartialComponent = /** @class */ (function () {
         this.dossierIDE = this.dossiers.filter(function (i) { return (i.name == "IDE Logiciel"); });
         this.dossierGestions = this.dossiers.filter(function (i) { return (i.name == "Gestions"); });
         this.dossierActivitees = this.dossiers.filter(function (i) { return (i.name == "Activitées"); });
+        this.dossierSavoirs = this.dossiers.filter(function (i) { return (i.name == "Savoirs"); });
+        this.dossierEquipements = this.dossiers.filter(function (i) { return (i.name == "Equipements"); });
         console.log(this.dossierIDE);
         // console.log(data.getData());
     }
     ListPartialComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'list-partial',template:/*ion-inline-start:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\list-partial\list-partial.html"*/'  \n\n  <ion-list >\n\n    <ion-list-header>\n\n      <h1>Ide logiciel</h1>\n\n      </ion-list-header>\n\n        <ion-item *ngFor="let i of dossierIDE">\n\n          <ion-icon name="{{i.sousDossier.icon}}" item-start></ion-icon>\n\n          {{i.sousDossier.name}}\n\n          {{i.sousDossier.titre}}\n\n      </ion-item>\n\n    \n\n  </ion-list>  \n\n\n\n  <ion-list >\n\n      <ion-list-header>\n\n          <h1>Gestion</h1>\n\n      </ion-list-header>\n\n      <ion-item *ngFor="let i of dossierGestions">{{i.sousDossier.name}}</ion-item>\n\n      \n\n    </ion-list>  \n\n\n\n    <ion-list >\n\n        <ion-list-header>\n\n            <h1>Activitées</h1>\n\n        </ion-list-header>\n\n        <ion-item *ngFor="let i of dossierActivitees">{{i.sousDossier.name}}</ion-item>\n\n        \n\n    </ion-list> \n\n'/*ion-inline-end:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\list-partial\list-partial.html"*/
+            selector: 'list-partial',template:/*ion-inline-start:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\list-partial\list-partial.html"*/'  \n\n  <ion-list >\n\n    <ion-list-header>\n\n      <h1>Ide logiciel</h1>\n\n      </ion-list-header>\n\n        <ion-item *ngFor="let i of dossierIDE">\n\n          <ion-icon name="{{i.sousDossier.icon}}" item-start></ion-icon>\n\n          {{i.sousDossier.name}}\n\n          {{i.sousDossier.titre}}\n\n      </ion-item>\n\n    \n\n  </ion-list>  \n\n\n\n  <ion-list >\n\n      <ion-list-header>\n\n          <h1>Gestion</h1>\n\n      </ion-list-header>\n\n      <ion-item *ngFor="let i of dossierGestions">{{i.sousDossier.name}}</ion-item>\n\n      \n\n    </ion-list>  \n\n\n\n    <ion-list >\n\n        <ion-list-header>\n\n            <h1>Activitées</h1>\n\n        </ion-list-header>\n\n        <ion-item *ngFor="let i of dossierActivitees">{{i.sousDossier.name}}</ion-item>\n\n        \n\n    </ion-list> \n\n\n\n    <ion-list >\n\n        <ion-list-header>\n\n            <h1>Savoirs</h1>\n\n        </ion-list-header>\n\n        <ion-item *ngFor="let i of dossierSavoirs">{{i.sousDossier.name}}</ion-item>\n\n    </ion-list> \n\n\n\n    <ion-list >\n\n        <ion-list-header>\n\n            <h1>Equipements</h1>\n\n        </ion-list-header>\n\n        <ion-item *ngFor="let i of dossierEquipements">{{i.sousDossier.name}}</ion-item>\n\n    </ion-list> \n\n'/*ion-inline-end:"C:\Users\eea\Documents\GitHub\01 Sources\01_Projet_Ionic\01_Projet_Ionic3_Prod\src\components\list-partial\list-partial.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_data_data__["a" /* DataProvider */]])
     ], ListPartialComponent);

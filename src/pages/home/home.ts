@@ -1,5 +1,6 @@
 import { SlidePage } from './../slide/slide';
 import { ListPage } from './../list/list';
+import {Item} from './../../Models/Item';
 
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
@@ -16,25 +17,35 @@ import { Observable } from 'rxjs';
 export class HomePage {
 //passage d'information du composant vers template
 //interpolation par {{}} ou []=
-  private titre: string;
-  private firsName: string;
-  private name: string;
-  private collection: [any];
-  public newItem:  {reference:string, name:string, state:number};
+  public titre: string;
+  public firsName: string;
+  public name: string;
+  
+  
 
   public pdfSrc: string = './assets/Test.pdf';
+  //private collection: [any];
+  //public collection: Array<Object>= new Array<object>();
+  public collection: Array<Item>;
+  //public newItem:  {reference:string, name:string, state:number};
+  public newItem: Item;
 
-
+  public Commentaire = false;
   constructor(public navCtrl: NavController) {
     this.titre ='app works';
     this.firsName ="robert";
     this.name = "dupont";
-    this.collection = [ 
+    /* this.collection = [ 
       {reference:'1234',name:'toto',state:0},
       {reference:'3456',name:'titi',state:1},
       {reference:'5678',name:'tata',state:2},
-    ];
+    ]; */
     
+    this.collection = [ 
+      new Item({reference:'1234',name:'toto',state:0}),
+      new Item({reference:'3456',name:'titi',state:1}),
+      new Item({reference:'5678',name:'tata',state:2}),
+    ];
     this.testObservable();
     this.resetNewItem();
   }// fin constructeur
@@ -48,12 +59,13 @@ export class HomePage {
 
   resetNewItem(){
 
-    this.newItem={reference:'',name:'',state:0};
+    //this.newItem={reference:'',name:'',state:0};
+    this.newItem = new Item({reference:'',name:'',state:0});
   }
   getDetails(event:Event, parameter){
     event.preventDefault();
     console.log(event);
-    let eventEnCours = event.target || event.currentTarget || event.srcElement;
+    //let eventEnCours = event.target || event.currentTarget || event.srcElement;
     //console.log(eventEnCours.attributes.id); //affiche id=1234
     //console.log(eventEnCours.id); // affiche 1234
     console.log(parameter);
@@ -104,5 +116,9 @@ export class HomePage {
    
   }
 
+
+  afficherCommentaire(){
+    this.Commentaire=!this.Commentaire;
+  }
 
 }//fin constructeur

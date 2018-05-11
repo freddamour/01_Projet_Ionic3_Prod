@@ -5,6 +5,11 @@ page-home button {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #000000, #420101);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+page-home .commentaire {
+  background: #80f59a;
 }
 
 page-home ion-slides {

@@ -10,53 +10,25 @@
 </ion-header>
 
 <ion-content >
-  <button ion-button (click)="navigateToList()">Navigation vers ListPage</button>
-  <button ion-button (click)="navigerVersSliderPage()">Navigation vers SliderPage</button>
-  <title-partial></title-partial>
-  <div>
-    <label>PDF src</label>
-    <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">
-  </div>
+  
+    <button class="commentaire" ion-button  (click)="afficherCommentaire()">Affiché commentaire</button>
+    <p *ngIf="Commentaire">//this.afficherCommentaire=!this.afficherCommentaire;</p>
 
-
-
-
-<!-- mon PDF-------------------------------------------------------------------------------->
-<ion-card>
-    <ion-row>  pdf
-      <pdf-viewer [src]="pdfSrc" 
-        [render-text]="false"
-        
-        [show-all]="true" 
-        [page]="1"
-        [stick-to-page]="false"
-        [fit-to-page]="false" 
-        [autoresize]="true"
-        [original-size]="fales"
-        [zoom]="0.5" 
-        style="display: block;">
-      </pdf-viewer>
-    </ion-row>
-</ion-card>
-
-  <!-- fin mon PDF-------------------------------------------------------------------------------->
+  <button ion-button block (click)="navigateToList()" alt="this.navCtrl.push(ListPage)">Navigation vers ListPage</button>
+   <p *ngIf="Commentaire">//this.navCtrl.push(ListPage);</p>                     
+  
+  <button ion-button block (click)="navigerVersSliderPage()">Navigation vers SliderPage</button>
+    <p *ngIf="Commentaire">//this.navCtrl.push(SliderPage);</p>
   
 
 
-
-
-
-
-
-
-
-  bla bla.
-  <a href="../../assets/Test.pdf">Notre grille tarifaire (PDF)</a>
-  <iframe frameborder="0" width="90%" height="60%" src="../../assets/Test.pdf" scrolling="auto"></iframe>
-  <p>
-    lien vers site
-    <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<h1 *ngIf="Commentaire" class="commentaire">
+    Partie-----------------------------------------------------------------------------------------------------------------------------------</h1>
+  
+  <title-partial>chargement…</title-partial>
+  
+<h1 *ngIf="Commentaire" class="commentaire">Partie-----------------------------------------------------------------------------------------------------------------------------------</h1>
+ 
   <p>interpolation de propriété {{1+1}}</p>
   <p>{{titre}}+{{firsName}}</p>
   <hr />
@@ -101,4 +73,44 @@
   <input type="text" [(ngModel)]=name>
   <button (click)="doClick()">appel méthode dans fichier .ts</button>
   <button ion-button id="btn">click</button>
+
+  <h1 *ngIf="Commentaire" class="commentaire">Partie-----------------------------------------------------------------------------------------------------------------------------------</h1>
+ 
+  
+  <div>
+      <label>PDF src</label>
+      <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">
+    </div>
+<!-- mon PDF-------------------------------------------------------------------------------->
+<ion-card>
+    <ion-row>  pdf
+      <pdf-viewer [src]="pdfSrc" 
+        [render-text]="false"
+        
+        [show-all]="true" 
+        [page]="1"
+        [stick-to-page]="false"
+        [fit-to-page]="false" 
+        [autoresize]="true"
+        [original-size]="fales"
+        [zoom]="1" 
+        style="display: block;">
+      </pdf-viewer>
+    </ion-row>
+</ion-card>
+
+  <!-- fin mon PDF-------------------------------------------------------------------------------->
+  
+
+  <h1 *ngIf="Commentaire" class="commentaire">Partie-----------------------------------------------------------------------------------------------------------------------------------</h1>
+ 
+
+
+  <a href="../../assets/Test.pdf">Notre grille tarifaire (PDF)</a>
+  <iframe frameborder="0" width="90%" height="60%" src="../../assets/Test.pdf" scrolling="auto"></iframe>
+  <p>
+    lien vers site
+    <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+
 </ion-content>

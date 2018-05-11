@@ -1,3 +1,5 @@
+import { Data } from './../../Models/Data';
+
 import { Component } from '@angular/core';
 //import de service manuellement
 import { DataProvider } from './../../providers/data/data';
@@ -11,13 +13,22 @@ import { DataProvider } from './../../providers/data/data';
   selector: 'list-partial',
   templateUrl: 'list-partial.html'
 })
+
 export class ListPartialComponent {
 
-  public list: [any];
+  public dossiers: Array<Data>;
+  public dossierIDE: Array<Data>;
+  public dossierGestions: Array<Data>;
+  public dossierActivitees: Array<Data>;
+  
 
   constructor(public data: DataProvider) {
-    this.list = data.getData();
-    console.log(data.getData());
+    this.dossiers = data.getData();
+    this.dossierIDE = this.dossiers.filter(i=>(i.name=="IDE Logiciel"));
+    this.dossierGestions = this.dossiers.filter(i=>(i.name=="Gestions"));
+    this.dossierActivitees = this.dossiers.filter(i=>(i.name=="Activitées"));
+    console.log(this.dossierIDE)
+   // console.log(data.getData());
 
   }
 

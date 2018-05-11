@@ -6,3 +6,12 @@ page-slide ion-content {
   background: linear-gradient(to bottom, #000000, #420101);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+page-slide ion-content ion-card {
+  display: block;
+  width: 20%;
+}
+
+page-slide H2 {
+  color: #fa0404;
+}

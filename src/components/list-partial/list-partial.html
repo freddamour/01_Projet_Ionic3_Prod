@@ -1,11 +1,28 @@
+  
   <ion-list >
-
-    <div *ngFor="let item of list">
-
-      <button ion-item *ngIf="item.status">
-        {{item.name}} {{item.role}}
-      </button>
-
-    </div>
-
+    <ion-list-header>
+      <h1>Ide logiciel</h1>
+      </ion-list-header>
+        <ion-item *ngFor="let i of dossierIDE">
+          <ion-icon name="{{i.sousDossier.icon}}" item-start></ion-icon>
+          {{i.sousDossier.name}}
+          {{i.sousDossier.titre}}
+      </ion-item>
+    
   </ion-list>  
+
+  <ion-list >
+      <ion-list-header>
+          <h1>Gestion</h1>
+      </ion-list-header>
+      <ion-item *ngFor="let i of dossierGestions">{{i.sousDossier.name}}</ion-item>
+      
+    </ion-list>  
+
+    <ion-list >
+        <ion-list-header>
+            <h1>Activitées</h1>
+        </ion-list-header>
+        <ion-item *ngFor="let i of dossierActivitees">{{i.sousDossier.name}}</ion-item>
+        
+    </ion-list> 

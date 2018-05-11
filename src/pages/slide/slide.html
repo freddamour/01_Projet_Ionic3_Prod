@@ -1,7 +1,7 @@
 
-<ion-header>
+<ion-header >
 
-  <ion-navbar>
+  <ion-navbar color="dark">
     <ion-title>Slide</ion-title>
   </ion-navbar>
 
@@ -10,11 +10,13 @@
 
 <ion-content padding>
 
-    <ion-slides autoplay="2000" pager>
+    <ion-slides autoplay="1000" pager *ngFor="let i of [1,2]">
+      
         <ion-slide >
-            <div >
-                  <h2>Slide 1e</h2>
-                  <pdf-viewer [src]="pdfSrc" 
+            <div  >
+                
+                  <h2>Slide {{i}}</h2>
+                  <pdf-viewer id="{{i}}" [src]="pdfSrc" 
                     [render-text]="false"
                     [show-all]="false" 
                     [page]="1"
@@ -26,50 +28,21 @@
                     style="display: block;">
                   </pdf-viewer>
             </div>
-            
-            
         </ion-slide>
   
-        <ion-slide >
-            <h2>Slide 2</h2>
-            <div>
-                <pdf-viewer [src]="pdfSrc" 
-                [render-text]="false"
-                [show-all]="false" 
-                [page]="2"
-                [stick-to-page]="true"
-                [fit-to-page]="true" 
-                [autoresize]="true"
-                [original-size]="true"
-                [zoom]="1" 
-                style="display: block;">
-                </pdf-viewer>
-          </div>
-  
-  
-        </ion-slide>
-  
-        <ion-slide >
-            <h2>Slide 3</h2>
-            <div>
-                <pdf-viewer [src]="pdfSrc" 
-                [render-text]="false"
-                [show-all]="false" 
-                [page]="1"
-                [stick-to-page]="true"
-                [fit-to-page]="true" 
-                [autoresize]="true"
-                [original-size]="true"
-                [zoom]="1" 
-                style="display: block;">
-                </pdf-viewer>
-          </div>
-  
-  
-        </ion-slide>
     </ion-slides>
 
-
+<ion-card>
+  <img src="./../../assets/imgs/systeme.ind/Four.png">
+  <ion-card-content>
+    <ion-card-title>
+      
+    </ion-card-title>
+    <p>
+      
+    </p>
+  </ion-card-content>
+</ion-card>
 
 
 </ion-content>
